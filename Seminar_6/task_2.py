@@ -4,7 +4,7 @@
 import random
 
 def my_filter(min, max, array):
-    array = list(filter(lambda x: x > min and x <= max, array))
+    array = list(filter(lambda x: min < x <= max, array))
     return sorted(array)
 
 array = [random.randint(0, 100) for i in range(10)]
